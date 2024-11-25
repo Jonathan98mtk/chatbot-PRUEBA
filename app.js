@@ -25,10 +25,6 @@ const menuOpc2_1 = fs.readFileSync(menuPath2_1, "utf8")
 const menuOpc2_2 = fs.readFileSync(menuPath2_2, "utf8")
 const menuOpc4_1 = fs.readFileSync(menuPath4_1, "utf8")
 
-const menuPathIMG = path.join(__dirname, "","CJEM.jpg")
-
-console.log(menuPathIMG + '\n')
-
 /**
  * Declaramos las conexiones de Mongo
  */
@@ -432,7 +428,7 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: menuPathIMG,
+        //media: '',
         }
     )
     .addAction(
