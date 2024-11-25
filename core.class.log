@@ -1,0 +1,156 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5218713917968@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB019018567BFD9C3FD47',
+    participant: undefined
+  },
+  messageTimestamp: 1732563832,
+  pushName: 'Hiram Matuk',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '5218713917968'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5218713917968@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB02AC51F781A6522FDC5',
+    participant: undefined
+  },
+  messageTimestamp: 1732563833,
+  pushName: 'Hiram Matuk',
+  broadcast: false,
+  message: Message {
+    conversation: '123',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '123',
+  from: '5218713917968'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_dfada9c6-47e1-4588-87db-1a7b3802b54d',
+  keyword: 'key_5f60014e-1247-4579-b0bc-aa24987b2cc6',
+  answer: '¡Hola! Soy *Elva*, la asistente virtual del *Instituto Municipal de la Mujer*.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 1000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'c0eec2e19a29b906c49fab730ec1a11e'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a083feaa-d243-4cf1-92e2-5136f64b6c42',
+  keyword: 'ans_dfada9c6-47e1-4588-87db-1a7b3802b54d',
+  answer: 'Antes de comenzar, recuerda que si tienes una emergencia marca inmediatamente al *911* o envía un whatsapp a seguridad Pública al *8719737975*.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 1000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'e125747910dfdf4f5d8a72b656c899e4'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_87b4a413-bf2e-4c3f-b939-9a09b036b955',
+  keyword: 'ans_a083feaa-d243-4cf1-92e2-5136f64b6c42',
+  answer: 'Si estás enfrentando una situación de violencia o emergencia, quiero que sepas que estás en un canal seguro. Mi objetivo es proporcionar información necesaria, recursos y consejos para brindarte herramientas que puedes utilizar en estas situaciones. \n' +
+    'Tu seguridad es mi prioridad número uno.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 1000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'a9a74658cbe1d693ce98ae4260d483a4'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5218713917968@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0AB7157F6697464C378',
+    participant: undefined
+  },
+  messageTimestamp: 1732563841,
+  pushName: 'Hiram Matuk',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '5218713917968'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5218713917968@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB052D47AD47864CF46CD',
+    participant: undefined
+  },
+  messageTimestamp: 1732563843,
+  pushName: 'Hiram Matuk',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '5218713917968'
+}
+[ERROR ID (ans_532e1d23-ded2-40e5-97c1-0ca6bece1280)]:  AssertionError [ERR_ASSERTION]: protocol mismatch
+    at Object.request (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\follow-redirects\index.js:541:14)
+    at Object.get (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\follow-redirects\index.js:548:44)
+    at C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:158:28
+    at new Promise (<anonymous>)
+    at handleDownload (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:157:20)
+    at generalDownload$1 (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:182:32)
+    at BaileysProvider.sendMedia (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:580:38)
+    at BaileysProvider.sendMessage (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:735:41)
+    at CoreClass.sendProviderAndSave (C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1561:46)
+    at C:\Users\jonathan\Documents\chatbot_1.0\chatBot-IMDLM\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1332:32 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'c:',
+  expected: 'http:',
+  operator: '=='
+}

@@ -428,7 +428,7 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: __dirname + 'CJEM.jpg'
+        media: __dirname + '/CJEM.jpg'
         }
     )
     .addAction(
