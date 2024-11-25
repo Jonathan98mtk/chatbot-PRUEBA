@@ -1,0 +1,8 @@
+Elejiste *Otras consultas*, elije una de las siguientes opciones: 
+
+1️⃣ - Talleres.
+2️⃣ - Emprendimientos.
+
+9️⃣ - Volver al menú anterior.
+
+0️⃣ - Salir

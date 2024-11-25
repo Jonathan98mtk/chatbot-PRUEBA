@@ -1,0 +1,9 @@
+Elegiste *Apoyo psicológico*, elije una de las siguientes opciones:
+
+1️⃣ - Primeros auxilios e intervención en situación de violencia.
+2️⃣ - Terapia para menores de edad.
+3️⃣ - Grupos de ayuda para mujeres en situación de violencia.
+
+9️⃣ - Volver al menú anterior.
+
+0️⃣ - Salir

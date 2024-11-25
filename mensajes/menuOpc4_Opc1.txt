@@ -1,0 +1,8 @@
+Elejiste *Talleres*, elije una de las siguientes opciones: 
+
+1️⃣ - Taller de Computación (Básico, intermedio y avanzado).
+2️⃣ - Taller de Inglés (Básico, intermedio y avanzado).
+
+9️⃣ - Volver al menú anterior.
+
+0️⃣ - Salir

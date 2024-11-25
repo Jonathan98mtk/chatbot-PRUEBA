@@ -1,0 +1,8 @@
+Elejiste *Atención médica*, elije una de las siguientes opciones: 
+
+1️⃣ - Urgencia médica.
+2️⃣ - Otros temas de salud.
+
+9️⃣ - Volver al menú anterior.
+
+0️⃣ - Salir

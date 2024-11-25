@@ -1,0 +1,8 @@
+Elegiste *Información sobre servicios de atención y trámites*, elije una de las siguientes opciones:
+
+1️⃣ - Apoyo psicológico.
+2️⃣ - Orientación jurídica.
+
+9️⃣ - Volver al menú anterior.
+
+0️⃣ - Salir

@@ -1,0 +1,14 @@
+Elegiste *Denuncia por violencia de género*, lamento saber que estas pasando por esto, porfavor elije una de las opciones que describa mejor tu situación: 
+
+1️⃣ - Abuso sexual.
+2️⃣ - Hostigamiento sexual.
+3️⃣ - Violencia familiar.
+4️⃣ - Violencia laboral.
+5️⃣ - Violencia digital.
+6️⃣ - Violación.
+7️⃣ - Lesiones.
+8️⃣ - Sustracción de menores.
+
+9️⃣ - Volver al menú anterior.
+
+0️⃣ - Salir
