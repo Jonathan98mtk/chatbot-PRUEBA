@@ -442,9 +442,9 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
 const flowPrueba = addKeyword(EVENTS.WELCOME)
 .addAnswer('Prueba Envío Imagenes Local',{
     delay: 1000,
-    media: Path1 + 'CJEM.jpg',
-    media: Path1 + 'CAIF.jpg',
-    media: Path1 + 'DEFENSORIA.jpg',
+    },
+    async (ctx, {gotoFlow, fallBack, flowDynamic, provider}) => {
+        return provider.sendImage(0,Path1 + 'CJEM.JPG','SI');   
     }
 )
 .addAction(
