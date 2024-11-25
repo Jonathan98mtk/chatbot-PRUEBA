@@ -7,6 +7,8 @@ const MongoAdapter = require('@bot-whatsapp/database/mongo')
 const path = require("path")
 const fs = require("fs")
 
+const Path1 = path.join(__dirname, "/")
+
 // LEER ARCHIVOS TXT
 const menuPath = path.join(__dirname, "mensajes","menu.txt")
 const menuPath2 = path.join(__dirname, "mensajes","menuOpc1.txt")
@@ -174,7 +176,7 @@ const menuOpcion2_Opcion1_Opcion3 = addKeyword(EVENTS.WELCOME)
         //media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
         }
     )
-    .addAnswer('*CJEM*' +
+    .addAnswer('*Centro de Justicia y Empoderamiento para las Mujeres*' +
         '\nTeléfono: *8712226300*' +
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
@@ -224,7 +226,7 @@ const menuOpcion2_Opcion1_Opcion2 = addKeyword(EVENTS.WELCOME)
         //media: 'https://i.postimg.cc/XpY4wsKr/DIF.jpg'
         }
     )
-    .addAnswer('*CAIF*' +
+    .addAnswer('*Centro de Atención e Integración Familiar*' +
         '\nTeléfono: *8717333199*' +
         '\nDirección: *Perfi. Raul Lopez Sanchez, esq con Rio Nazas s/n Col. El Roble, CP 27120, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
@@ -251,7 +253,7 @@ const menuOpcion2_Opcion1_Opcion1 = addKeyword(EVENTS.WELCOME)
         //media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
         }
     )
-    .addAnswer('*CJEM*' +
+    .addAnswer('*Centro de Justicia y Empoderamiento para las Mujeres*' +
         '\nTeléfono: *8712226300*' +
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
@@ -355,7 +357,7 @@ const respuestaPRONNIF= addKeyword(EVENTS.WELCOME)
         delay: 1000,
         }
     )
-    .addAnswer('Puedes realizar tu denuncia en la *PRONNIF*',{
+    .addAnswer('Puedes realizar tu denuncia en la *Procuraduría para Niños, Niñas y la Familia*',{
         delay: 1000,
         }
     )
@@ -376,7 +378,7 @@ const respuestaFGEC= addKeyword(EVENTS.WELCOME)
         delay: 1000,
         }
     )
-    .addAnswer('Puedes realizar tu denuncia en la *FGEC*',{
+    .addAnswer('Puedes realizar tu denuncia en la *Fiscalía General del Estado de Coahuila*',{
         delay: 1000,
         }
     )
@@ -398,7 +400,7 @@ const respuestaTFCA= addKeyword(EVENTS.WELCOME)
         delay: 1000,
         }
     )
-    .addAnswer('Puedes realizar tu denuncia en el *TFCA*',{
+    .addAnswer('Puedes realizar tu denuncia en la *Tribunal Federal de Conciliación y Arbitraje*',{
         delay: 1000,
         }
     )
@@ -420,7 +422,7 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         delay: 1000,
         }
     )
-    .addAnswer('Puedes realizar tu denuncia en el *CJEM*',{
+    .addAnswer('Puedes realizar tu denuncia en el *Centro de Justicia y Empoderamiento para las Mujeres*',{
         delay: 1000,
         }
     )
@@ -437,6 +439,19 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         }
     )
 
+const flowPrueba = addKeyword(EVENTS.WELCOME)
+.addAnswer('Prueba Envío Imagenes Local',{
+    delay: 1000,
+    media: Path1 + 'CJEM.jpg',
+    media: Path1 + 'CAIF.jpg',
+    media: Path1 + 'DEFENSORIA.jpg',
+    }
+)
+.addAction(
+    async (ctx, {gotoFlow, fallBack, flowDynamic}) => {
+        return gotoFlow(volverMenuFlow);   
+    }
+)
 
 const menuOpcion4 = addKeyword(EVENTS.ACTION)
     .addAnswer(
@@ -548,6 +563,8 @@ const menuOpcion1 = addKeyword(EVENTS.ACTION)
                     return gotoFlow(respuestaPRONNIF);
                 case "9":
                     return gotoFlow(menuFlow);
+                case "1064":
+                    return gotoFlow(flowPrueba);
                 case "0":
                     return gotoFlow(volverMenuFlow);
             }
@@ -635,7 +652,7 @@ const main = async () => {
         menuOpcion3, menuOpcion4, respuestaCJEM, respuestaTFCA, respuestaFGEC, respuestaPRONNIF, 
         menuOpcion2_Opcion1, menuOpcion2_Opcion2, menuOpcion2_Opcion1_Opcion1, menuOpcion2_Opcion1_Opcion2, 
         menuOpcion2_Opcion1_Opcion3, respuestaDEFENSORIA, volverMenuFlow, menuOpcion4_Opcion1, 
-        menuOpcion4_Opcion1_Opcion1_2, menuOpcion4_Opcion2, menuOpcion3_Opcion1, menuOpcion3_Opcion2])
+        menuOpcion4_Opcion1_Opcion1_2, menuOpcion4_Opcion2, menuOpcion3_Opcion1, menuOpcion3_Opcion2, flowPrueba])
     const adapterProvider = createProvider(BaileysProvider)
     createBot({
         flow: adapterFlow,
