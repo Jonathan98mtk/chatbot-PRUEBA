@@ -7,8 +7,6 @@ const MongoAdapter = require('@bot-whatsapp/database/mongo')
 const path = require("path")
 const fs = require("fs")
 
-const Path1 = path.join(__dirname, "/")
-
 // LEER ARCHIVOS TXT
 const menuPath = path.join(__dirname, "mensajes","menu.txt")
 const menuPath2 = path.join(__dirname, "mensajes","menuOpc1.txt")
@@ -430,7 +428,7 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        //media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
+        media: __dirname + 'CJEM.jpg'
         }
     )
     .addAction(
@@ -439,14 +437,6 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         }
     )
 
-const flowPrueba = addKeyword(EVENTS.WELCOME)
-.addAnswer('Prueba Envío Imagenes Local',{
-    delay: 1000,
-    },
-    async (ctx, {gotoFlow, fallBack, flowDynamic, provider}) => {
-        return provider.sendImage(0,'./CJEM.JPG','');   
-    }
-)
 .addAction(
     async (ctx, {gotoFlow, fallBack, flowDynamic}) => {
         return gotoFlow(volverMenuFlow);   
@@ -577,7 +567,7 @@ const menuFlow = addKeyword(EVENTS.ACTION)
             capture: true,
         },
         async (ctx, {gotoFlow, fallBack, flowDynamic}) => {
-            if (!['1','2','3','4','0',"1064"].includes(ctx.body)) {
+            if (!['1','2','3','4','0'].includes(ctx.body)) {
                 return fallBack(
                     "Respuesta no válida, elije una de las opciones disponibles."
                 );
@@ -591,8 +581,6 @@ const menuFlow = addKeyword(EVENTS.ACTION)
                     return gotoFlow(menuOpcion3);
                 case "4":
                     return gotoFlow(menuOpcion4);
-                case "1064":
-                        return gotoFlow(flowPrueba);
                 case "0":
                     return gotoFlow(volverMenuFlow);
             }
@@ -652,7 +640,7 @@ const main = async () => {
         menuOpcion3, menuOpcion4, respuestaCJEM, respuestaTFCA, respuestaFGEC, respuestaPRONNIF, 
         menuOpcion2_Opcion1, menuOpcion2_Opcion2, menuOpcion2_Opcion1_Opcion1, menuOpcion2_Opcion1_Opcion2, 
         menuOpcion2_Opcion1_Opcion3, respuestaDEFENSORIA, volverMenuFlow, menuOpcion4_Opcion1, 
-        menuOpcion4_Opcion1_Opcion1_2, menuOpcion4_Opcion2, menuOpcion3_Opcion1, menuOpcion3_Opcion2, flowPrueba])
+        menuOpcion4_Opcion1_Opcion1_2, menuOpcion4_Opcion2, menuOpcion3_Opcion1, menuOpcion3_Opcion2])
     const adapterProvider = createProvider(BaileysProvider)
     createBot({
         flow: adapterFlow,
