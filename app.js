@@ -50,7 +50,7 @@ const menuOpcion4_Opcion2 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Av. Colón y Delicias, Col. Luis Echeverria Alvarez, CP 27220, Torreón, Coahuila* ' +
         '\nHorario: *08:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
+        //media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
         }
     )
     .addAction(
@@ -78,7 +78,7 @@ const menuOpcion4_Opcion1_Opcion1_2 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Av. Colón y Delicias, Col. Luis Echeverria Alvarez, CP 27220, Torreón, Coahuila* ' +
         '\nHorario: *08:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
+        //media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
         }
     )
     .addAction(
@@ -135,7 +135,7 @@ const menuOpcion3_Opcion2 = addKeyword(EVENTS.ACTION)
     '\nDirección: *Av. Ocampo No. 1167 Ote. Col. Segundo de Cobián Centro; entre C. Niños Héroes (Calle 11) y Av. Mariano López Ortiz (Calle 12). CP 27000 Torreón, Coahuila* ' +
     '\nHorario: *Lunes a Viernes de 08:00 a 19:00 Hrs*',{
     delay: 1000,
-    media: 'https://i.postimg.cc/p5XbJdFw/SALUD.jpg'
+    //media: 'https://i.postimg.cc/p5XbJdFw/SALUD.jpg'
     }
 )
 .addAction(
@@ -171,7 +171,7 @@ const menuOpcion2_Opcion1_Opcion3 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Av. Colón y Delicias, Col. Luis Echeverria Alvarez, CP 27220, Torreón, Coahuila* ' +
         '\nHorario: *08:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
+        //media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
         }
     )
     .addAnswer('*CJEM*' +
@@ -179,14 +179,14 @@ const menuOpcion2_Opcion1_Opcion3 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
+        //media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
         }
     )
     .addAnswer('*MUSAS*' +
         '\nTeléfono: *8712284439*' +
         '\nHorario: *Las 24 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/v1fsQkyN/MUSAS.png'
+        //media: 'https://i.postimg.cc/v1fsQkyN/MUSAS.png'
         }
     )
     .addAnswer('*Mujeres Contigo*' +
@@ -194,7 +194,7 @@ const menuOpcion2_Opcion1_Opcion3 = addKeyword(EVENTS.WELCOME)
         '\nTeléfono: *8712445091*' +
         '\nHorario: *10:00 - 15:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/WhYjS0SX/MUJERES-CONTIGO.jpg'
+        //media: 'https://i.postimg.cc/WhYjS0SX/MUJERES-CONTIGO.jpg'
         }
     )
     .addAnswer('*Línea de la Vida*' +
@@ -202,7 +202,7 @@ const menuOpcion2_Opcion1_Opcion3 = addKeyword(EVENTS.WELCOME)
     'del especialista, expresa tu necesidad, al final de la llamada te brindarán ' +
     'información sobre los centros especializados de tratamiento.',{
         delay: 1000,
-        media: 'https://i.postimg.cc/6T9XXMmM/VIDA.jpg'
+        //media: 'https://i.postimg.cc/6T9XXMmM/VIDA.jpg'
         }
     )
     .addAction(
@@ -221,7 +221,7 @@ const menuOpcion2_Opcion1_Opcion2 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *De Los Continentes 500, Sin Nombre de Col 16, CP 27058 Torreón, Coahuila* ' +
         '\nHorario: *08:00 - 15:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/XpY4wsKr/DIF.jpg'
+        //media: 'https://i.postimg.cc/XpY4wsKr/DIF.jpg'
         }
     )
     .addAnswer('*CAIF*' +
@@ -229,7 +229,7 @@ const menuOpcion2_Opcion1_Opcion2 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Perfi. Raul Lopez Sanchez, esq con Rio Nazas s/n Col. El Roble, CP 27120, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/kRn9Yckh/CAIF.png'
+        //media: 'https://i.postimg.cc/kRn9Yckh/CAIF.png'
         }
     )
     .addAction(
@@ -248,7 +248,7 @@ const menuOpcion2_Opcion1_Opcion1 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Av. Colón y Delicias, Col. Luis Echeverria Alvarez, CP 27220, Torreón, Coahuila* ' +
         '\nHorario: *08:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
+        //media: 'https://i.postimg.cc/gxwp7rTd/IMMT.jpg'
         }
     )
     .addAnswer('*CJEM*' +
@@ -256,14 +256,14 @@ const menuOpcion2_Opcion1_Opcion1 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
+        //media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
         }
     )
     .addAnswer('*MUSAS*' +
         '\nTeléfono: *8712284439*' +
         '\nHorario: *Las 24 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/v1fsQkyN/MUSAS.png'
+        //media: 'https://i.postimg.cc/v1fsQkyN/MUSAS.png'
         }
     )
     .addAction(
@@ -341,7 +341,7 @@ const respuestaDEFENSORIA = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calle del Yute # 105 esq. Comerciantes, Col. villas de la Merced, CP 27276, Torreón, Coahuila*' + 
         '\nHorario: *09:00 - 14:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/grdY0znq/DEFENSORIA.jpg'
+        //media: 'https://i.postimg.cc/grdY0znq/DEFENSORIA.jpg'
         }
     )
     .addAction(
@@ -362,7 +362,7 @@ const respuestaPRONNIF= addKeyword(EVENTS.WELCOME)
     .addAnswer('Teléfono: *8717163088*' +
         '\nDirección: *Lib. Perif. Raúl López Sánchez, Leandro Rovirosa Wade, CP 27119, Torreón, Coahuila*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/ftvQddJ7/PRONNIF.jpg'
+        //media: 'https://i.postimg.cc/ftvQddJ7/PRONNIF.jpg'
         }
     )
     .addAction(
@@ -384,7 +384,7 @@ const respuestaFGEC= addKeyword(EVENTS.WELCOME)
         '\nDirección: *Lib. Perif. Raúl López Sánchez Km. 3+900, Los Viñedos, CP 27019, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/qgLphPKf/FGEC.png'
+        //media: 'https://i.postimg.cc/qgLphPKf/FGEC.png'
         }
     )
     .addAction(
@@ -406,7 +406,7 @@ const respuestaTFCA= addKeyword(EVENTS.WELCOME)
         '\nDirección: *Zaragoza Sur, Colonia Zona Centro #148 BIS, CP 27000, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/jwTrCcdd/TFCA.jpg'
+        //media: 'https://i.postimg.cc/jwTrCcdd/TFCA.jpg'
         }
     )
     .addAction(
@@ -428,7 +428,7 @@ const respuestaCJEM = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
+        //media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
         }
     )
     .addAction(
