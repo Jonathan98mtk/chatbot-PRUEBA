@@ -563,8 +563,6 @@ const menuOpcion1 = addKeyword(EVENTS.ACTION)
                     return gotoFlow(respuestaPRONNIF);
                 case "9":
                     return gotoFlow(menuFlow);
-                case "1064":
-                    return gotoFlow(flowPrueba);
                 case "0":
                     return gotoFlow(volverMenuFlow);
             }
@@ -579,7 +577,7 @@ const menuFlow = addKeyword(EVENTS.ACTION)
             capture: true,
         },
         async (ctx, {gotoFlow, fallBack, flowDynamic}) => {
-            if (!['1','2','3','4','0'].includes(ctx.body)) {
+            if (!['1','2','3','4','0',"1064"].includes(ctx.body)) {
                 return fallBack(
                     "Respuesta no válida, elije una de las opciones disponibles."
                 );
@@ -593,6 +591,8 @@ const menuFlow = addKeyword(EVENTS.ACTION)
                     return gotoFlow(menuOpcion3);
                 case "4":
                     return gotoFlow(menuOpcion4);
+                case "1064":
+                        return gotoFlow(flowPrueba);
                 case "0":
                     return gotoFlow(volverMenuFlow);
             }
