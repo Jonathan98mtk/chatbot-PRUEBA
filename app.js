@@ -444,7 +444,7 @@ const flowPrueba = addKeyword(EVENTS.WELCOME)
     delay: 1000,
     },
     async (ctx, {gotoFlow, fallBack, flowDynamic, provider}) => {
-        return provider.sendImage(0,Path1 + 'CJEM.JPG','SI');   
+        return provider.sendImage(0,'/CJEM.JPG','');   
     }
 )
 .addAction(
