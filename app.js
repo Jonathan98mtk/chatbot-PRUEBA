@@ -179,7 +179,7 @@ const menuOpcion2_Opcion1_Opcion3 = addKeyword(EVENTS.WELCOME)
         '\nDirección: *Calzada Francisco Sarabia s/n, Col. San Felipe, CP 27085, Torreón, Coahuila* ' +
         '\nHorario: *09:00 - 16:00 Hrs*',{
         delay: 1000,
-        media: 'https://i.postimg.cc/v1fsQkyN/CJEM1.jpg'
+        media: 'https://i.postimg.cc/hz8c0w3d/CJEM1.jpg'
         }
     )
     .addAnswer('*MUSAS*' +
