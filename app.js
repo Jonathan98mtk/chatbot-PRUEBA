@@ -595,7 +595,6 @@ const menuFlow = addKeyword(EVENTS.ACTION)
 const flowPrincipal = addKeyword(EVENTS.WELCOME)
     .addAnswer('¡Hola! Esto es una Prueba.',{
         media: '\app\logos\CJEM1.JPG',
-        media: '/app/logos/CJEM1.JPG',
     }
     ) 
 
