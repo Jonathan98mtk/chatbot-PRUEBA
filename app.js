@@ -7,7 +7,8 @@ const MongoAdapter = require('@bot-whatsapp/database/mongo')
 const path = require("path")
 const fs = require("fs")
 
-const logoPath = path.join(__dirname, "logos")
+const CJEM = path.join(__dirname, "logos","CJEM1.JPG")
+console.log(CJEM);
 
 // LEER ARCHIVOS TXT
 const menuPath = path.join(__dirname, "mensajes","menu.txt")
@@ -592,7 +593,7 @@ const menuFlow = addKeyword(EVENTS.ACTION)
 const flowPrincipal = addKeyword(EVENTS.WELCOME)
     .addAnswer('¡Hola! Esto es una Prueba.',{
         delay: 1000,
-        media: logoPath + '/CJEM1.JPG',
+        media: CJEM,
     }
     ) 
 
