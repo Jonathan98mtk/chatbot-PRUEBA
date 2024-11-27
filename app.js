@@ -7,6 +7,8 @@ const MongoAdapter = require('@bot-whatsapp/database/mongo')
 const path = require("path")
 const fs = require("fs")
 
+const logoPath = path.join(__dirname, "logos")
+
 // LEER ARCHIVOS TXT
 const menuPath = path.join(__dirname, "mensajes","menu.txt")
 const menuPath2 = path.join(__dirname, "mensajes","menuOpc1.txt")
@@ -588,31 +590,15 @@ const menuFlow = addKeyword(EVENTS.ACTION)
     )
 
 const flowPrincipal = addKeyword(EVENTS.WELCOME)
-    .addAnswer('¡Hola! Soy *Elva*, la asistente virtual del *Instituto Municipal de la Mujer*.',{
+    .addAnswer('¡Hola! Esto es una Prueba.',{
         delay: 1000,
-    })
-    .addAnswer('Antes de comenzar, recuerda que si tienes una emergencia marca inmediatamente al *911* o envía un whatsapp a seguridad Pública al *8719737975*.',{
-        delay: 1000,
-    })
-    .addAnswer('Si estás enfrentando una situación de violencia o emergencia, quiero ' +
-                'que sepas que estás en un canal seguro. Mi objetivo es proporcionar ' +
-                'información necesaria, recursos y consejos para brindarte ' +
-                'herramientas que puedes utilizar en estas situaciones. \nTu seguridad es ' +
-                'mi prioridad número uno.',{
-    delay: 1000,
-    },  
-    async (ctx, ctxFn) => {
-        await ctxFn.gotoFlow(menuFlow)  
+        media: logoPath + '/CJEM1.JPG',
     }
     ) 
 
+
+
 const volverMenuFlow = addKeyword(EVENTS.ACTION)
-.addAnswer(
-    'Si necesitas más información, no dudes en volver aquí. Estoy para apoyarte. Recuerda que tu seguridad es nuestra prioriodad y que este chat es confidencial y está disponible para ayudarte las 24 horas.',
-    {
-        delay: 1000,
-    }
-)
 .addAnswer(
     'Puedes enviar la palabra *menu* para regresar al menú principal o puedes iniciar nuevamente la conversación Saludando.',
     {  
