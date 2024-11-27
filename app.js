@@ -28,6 +28,8 @@ const menuOpc2_1 = fs.readFileSync(menuPath2_1, "utf8")
 const menuOpc2_2 = fs.readFileSync(menuPath2_2, "utf8")
 const menuOpc4_1 = fs.readFileSync(menuPath4_1, "utf8")
 
+console.log(menuPath4_1);
+
 /**
  * Declaramos las conexiones de Mongo
  */
