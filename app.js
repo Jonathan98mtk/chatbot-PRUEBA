@@ -594,7 +594,6 @@ const menuFlow = addKeyword(EVENTS.ACTION)
 
 const flowPrincipal = addKeyword(EVENTS.WELCOME)
     .addAnswer('¡Hola! Esto es una Prueba.',{
-        delay: 1000,
         media: CJEM,
     }
     ) 
